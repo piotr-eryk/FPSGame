@@ -173,7 +173,7 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""0c87e8f6-5413-4288-9573-6d10ae156e11"",
                     ""path"": ""<Mouse>/leftButton"",
-                    ""interactions"": ""Hold(duration=1.401298E-45,pressPoint=0.1)"",
+                    ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Shoot"",

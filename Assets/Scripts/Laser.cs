@@ -10,21 +10,36 @@ public class Laser : Gun
     private GameObject laser;
     [SerializeField]
     private float fadeDuration = 0.1f;
+    [SerializeField]
+    private float fadeDelay = 0.05f;
 
-    LineRenderer line;
+    private Vector3 laserEndPosition;
+    private LineRenderer line;
 
     protected override void CreateProjectile(Vector3 laserEnd)
     {
-        line = Instantiate(laser).GetComponent<LineRenderer>();//TODO: change to pooling
-        line.SetPositions(new Vector3[2] { muzzleLocation.transform.position, laserEnd });
-        StartCoroutine(FadeLaser(line));
+        if (line == null)
+        {
+            line = Instantiate(laser).GetComponent<LineRenderer>();
+        }
+        else
+        {
+            line.SetPositions(new Vector3[2] { muzzleLocation.transform.position, laserEnd });
+        }
+
+        laserEndPosition = laserEnd;
+        StartCoroutine(TryFadeLaser(line)); //TODO: movement with fading laser is bugged
     }
 
-    IEnumerator FadeLaser(LineRenderer line)
+    IEnumerator TryFadeLaser(LineRenderer line)
     {
+        yield return new WaitForSeconds(fadeDelay);
+
         float alpha = 1;
         while (alpha > 0)
         {
+
+            line.SetPositions(new Vector3[2] { muzzleLocation.transform.position, laserEndPosition });
             alpha -= Time.deltaTime / fadeDuration;
             line.startColor = new Color(line.startColor.r, line.startColor.g, line.startColor.b, alpha);
             line.endColor = new Color(line.endColor.r, line.endColor.g, line.endColor.b, alpha);

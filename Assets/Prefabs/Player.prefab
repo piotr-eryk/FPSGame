@@ -188,8 +188,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerMotor: {fileID: 2725325942320855199}
   playerLook: {fileID: 5222679340357849399}
-  gun: {fileID: 2581913375022666707}
-  changeWeapon: {fileID: 0}
+  gunList:
+  - {fileID: 2581913375022666707}
+  - {fileID: 4146804067039045735}
+  - {fileID: 503469925890825026}
+  changeWeapon: {fileID: 5999623067105204992}
 --- !u!114 &5222679340357849399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,7 +220,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a627aabe2625f2e4eb1d93dba5bf271b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imagesList: []
+  imagesList:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   weaponList:
   - {fileID: 8129309819353353541}
   - {fileID: 1504835671030706813}

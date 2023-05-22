@@ -5,12 +5,12 @@ using UnityEngine.InputSystem;
 
 public class InputManager : MonoBehaviour
 {
-    [SerializeField] 
+    [SerializeField]
     private PlayerMotor playerMotor;
     [SerializeField]
     private PlayerLook playerLook;
     [SerializeField]
-    private Gun gun;
+    private List<Gun> gunList;
     [SerializeField]
     private ChangeWeapon changeWeapon;
 
@@ -40,7 +40,16 @@ public class InputManager : MonoBehaviour
 
         if (movementAction.Shoot.IsPressed())
         {
-            gun.Shoot();
+            foreach (var gun in gunList)
+            {
+                if (gun.isActiveAndEnabled)
+                {
+                    gun.Shoot();
+                    break;
+                }
+
+            }
+
         }
     }
 
@@ -49,7 +58,7 @@ public class InputManager : MonoBehaviour
         playerInput.Enable();
     }
 
-    private void OnDestroy()
+    private void OnDisable()
     {
         playerInput.Disable();
     }
