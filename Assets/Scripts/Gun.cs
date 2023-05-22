@@ -2,24 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Gun : MonoBehaviour
+public abstract class Gun : MonoBehaviour
 {
-    private Transform cam;
+    protected Transform cam;
 
     [SerializeField]
-    private float range = 50f;
+    protected float range = 50f;
     [SerializeField]
-    private DamageType damageType;
+    protected DamageType damageType;
     [SerializeField]
-    private DamageableObjectList damageableObjectList;
+    protected DamageableObjectList damageableObjectList;
     [SerializeField]
     protected GameObject muzzleLocation;
-    [SerializeField]
-    protected GameObject projectilePrefab;
-    
+
     protected RaycastHit hitTarget;
 
-    private void Awake()
+    public virtual void Awake()
     {
         cam = Camera.main.transform;
     }
@@ -28,7 +26,9 @@ public class Gun : MonoBehaviour
     {
         if (Physics.Raycast(cam.position, cam.forward, out hitTarget, range))
         {
-            Debug.Log(hitTarget.collider.name);
+            CreateProjectile(hitTarget.point);
         }
     }
+
+    protected abstract void CreateProjectile(Vector3 targetPoint);
 }

@@ -18,7 +18,6 @@ public class InputManager : MonoBehaviour
     private PlayerInput.MovementActions movementAction;
     private Vector2 horizontalInput;
     private Vector2 mouseInput;
-    private float keyInput;
 
     private void Awake()
     {
@@ -29,7 +28,7 @@ public class InputManager : MonoBehaviour
 
         movementAction.MouseX.performed += ctx => mouseInput.x = ctx.ReadValue<float>();
         movementAction.MouseY.performed += ctx => mouseInput.y = ctx.ReadValue<float>();
-        movementAction.ChooseFirstWeapon.performed += _ => changeWeapon.SwitchWeapon(0);
+        movementAction.ChooseFirstWeapon.performed += _ => changeWeapon.SwitchWeapon(0);//TODO: magic numbers
         movementAction.ChooseSecondWeapon.performed += _ => changeWeapon.SwitchWeapon(1);
         movementAction.ChooseThirdWeapon.performed += _ => changeWeapon.SwitchWeapon(2);
     }
