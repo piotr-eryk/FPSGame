@@ -1,0 +1,368 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &513379057912933905
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9101642368278634105}
+  m_Layer: 0
+  m_Name: BrokenMirror
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9101642368278634105
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513379057912933905}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3872240815939096051}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &3618167298422794776
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9101642368278634105}
+    m_Modifications:
+    - target: {fileID: -9117972812582408716, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: -8926370916295208809, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8167205742378819967, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: -8103739513648552296, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: -7707218089383192204, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: -7214738315785424007, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: -6952768688259441862, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: -6637419618931604008, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: -6349841665505879756, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: -6212297381793942781, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: -6175587075763531176, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: -5906985808983031751, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: -5682900212072335535, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: -5306077867123406013, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: -4977623041738194055, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: -4761532873545221919, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: -4708497902620461915, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: -4530349704486035142, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: -4403403460903100740, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: -3806297789226614517, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: -3715601704577934069, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: -3438955766501284811, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: -2962082875546693646, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: -2814920400604813196, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: -2746359859880296901, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: -2590275846550483124, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: -1884186329981457621, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: -1802011404630456466, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: -1661455609872685517, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: -1519009642396001011, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: -1287985991954662824, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: -650194874319855101, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: -601348352335682520, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: -317788936244576890, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: 427428779036054908, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: 532469641527433907, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: 584670580017562252, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: 693188666290829832, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: brokenMirror
+      objectReference: {fileID: 0}
+    - target: {fileID: 1713434017211738885, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: 2006276929806657263, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114979391813893173, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: 2223656144901640358, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: 2625481385516828268, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: 3640558193573492848, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767443574282623542, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: 3945784204111145020, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246396014027303019, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341492231351874931, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739428407580247454, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: 4797179554963185122, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: 4905476165691099905, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: 5463947470247189839, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: 5731641588493537927, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: 5863345457557262440, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213936932120745601, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: 6443487659991511670, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: 6528487540192101241, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: 6832254652863516649, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: 7143249590012032982, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: 7520415189020524551, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: 7561657831320599755, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: 7631598083750953044, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947100879382621190, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: 8312412724117555722, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: 8423285350772215370, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: 8437686058423787172, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667171682751166612, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    - target: {fileID: 8970473580470325374, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Name
+      value: mirrorShard
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+--- !u!4 &3872240815939096051 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+  m_PrefabInstance: {fileID: 3618167298422794776}
+  m_PrefabAsset: {fileID: 0}
