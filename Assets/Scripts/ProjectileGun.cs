@@ -9,6 +9,8 @@ public class ProjectileGun : Gun
     private GameObject projectilePrefab;
     [SerializeField]
     private float projectileSpeed = 0.1f;
+    [SerializeField]
+    private float shootingDelay = 3f;
 
     public IObjectPool<GameObject> pool;
 
@@ -24,16 +26,21 @@ actionOnDestroy: (obj) => Destroy(obj), collectionCheck: false, defaultCapacity:
 
     protected override void CreateProjectile(Vector3 targetPosition)
     {
-        if (bulletObject)
+        if (bulletObject && bulletObject.activeSelf)
         {
             Rigidbody rigidbody = bulletObject.GetComponentInChildren<Rigidbody>();
             rigidbody.angularVelocity = Vector3.zero;
-
-            rigidbody.velocity = transform.forward * projectileSpeed;
+            rigidbody.velocity = cam.transform.forward * projectileSpeed;
         }
         else
         {
             bulletObject = pool.Get();
+            bulletObject.GetComponentInChildren<Projectile>().OnHit += BackProjectileToPool;
         }
+    }
+
+    public void BackProjectileToPool()
+    {
+        pool.Release(bulletObject);
     }
 }
