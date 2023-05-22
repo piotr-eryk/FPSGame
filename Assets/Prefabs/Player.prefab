@@ -321,7 +321,7 @@ MonoBehaviour:
   damageType: 2
   damageableObjectList: {fileID: 11400000, guid: d4ea5fb88271b6641993e18705530cea, type: 2}
   muzzleLocation: {fileID: 1504835671030706809}
-  projectilePrefab: {fileID: 8624026847795709461, guid: 074bf56e2937e2c46a74d66f021ec0e5, type: 3}
+  projectilePrefab: {fileID: 7546499504449993487, guid: 624943062b6352847a8ff541435180d0, type: 3}
   projectileSpeed: 30
 --- !u!1001 &8129309819353180139
 PrefabInstance:

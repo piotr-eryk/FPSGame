@@ -8,26 +8,32 @@ public class ProjectileGun : Gun
     [SerializeField]
     private GameObject projectilePrefab;
     [SerializeField]
-    private float projectileSpeed;
+    private float projectileSpeed = 0.1f;
+
+    public IObjectPool<GameObject> pool;
+
+    private GameObject bulletObject;
+
+    public override void Awake()
+    {
+        base.Awake();
+        pool = new ObjectPool<GameObject>(createFunc: () => Instantiate(projectilePrefab, muzzleLocation.transform.position, Quaternion.identity),
+actionOnGet: (obj) => obj.SetActive(true), actionOnRelease: (obj) => obj.SetActive(false),
+actionOnDestroy: (obj) => Destroy(obj), collectionCheck: false, defaultCapacity: 5, maxSize: 20);
+    }
 
     protected override void CreateProjectile(Vector3 targetPosition)
     {
-        //TODO: change to pooling
+        if (bulletObject)
         {
-            GameObject bulletObject = Instantiate(projectilePrefab);
+            Rigidbody rigidbody = bulletObject.GetComponentInChildren<Rigidbody>();
+            rigidbody.angularVelocity = Vector3.zero;
 
-            if (bulletObject)
-            {
-                Rigidbody rigidbody = bulletObject.GetComponent<Rigidbody>();
-                rigidbody.angularVelocity = Vector3.zero;
-
-                bulletObject.transform.position = transform.position + transform.forward * 2f;
-                bulletObject.transform.rotation = transform.rotation;
-                bulletObject.transform.Rotate(90.0f, 0.0f, 0.0f, Space.Self);
-                rigidbody.velocity = transform.forward * projectileSpeed;
-
-                bulletObject.SetActive(true);
-            }
+            rigidbody.velocity = transform.forward * projectileSpeed;
+        }
+        else
+        {
+            bulletObject = pool.Get();
         }
     }
 }

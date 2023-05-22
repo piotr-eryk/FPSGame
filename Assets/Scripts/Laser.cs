@@ -20,7 +20,7 @@ public class Laser : Gun
     {
         if (line == null)
         {
-            line = Instantiate(laser).GetComponent<LineRenderer>();
+            line = Instantiate(laser).GetComponent<LineRenderer>();//TODO: change to pooling
         }
         else
         {
