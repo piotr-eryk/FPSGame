@@ -742,23 +742,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3703937042106654232, guid: 8c0e6ef3a7bf1b445b378d8b9f22da70, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7070396
+      value: 0.999905
       objectReference: {fileID: 0}
     - target: {fileID: 3703937042106654232, guid: 8c0e6ef3a7bf1b445b378d8b9f22da70, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.7070396
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3703937042106654232, guid: 8c0e6ef3a7bf1b445b378d8b9f22da70, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.009749306
+      value: -0.013787601
       objectReference: {fileID: 0}
     - target: {fileID: 3703937042106654232, guid: 8c0e6ef3a7bf1b445b378d8b9f22da70, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.009749306
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3703937042106654232, guid: 8c0e6ef3a7bf1b445b378d8b9f22da70, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 90
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3703937042106654232, guid: 8c0e6ef3a7bf1b445b378d8b9f22da70, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -771,6 +771,26 @@ PrefabInstance:
     - target: {fileID: 4047847320503305378, guid: 8c0e6ef3a7bf1b445b378d8b9f22da70, type: 3}
       propertyPath: m_Name
       value: DeathOrb
+      objectReference: {fileID: 0}
+    - target: {fileID: 7925783793894869346, guid: 8c0e6ef3a7bf1b445b378d8b9f22da70, type: 3}
+      propertyPath: endColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7925783793894869346, guid: 8c0e6ef3a7bf1b445b378d8b9f22da70, type: 3}
+      propertyPath: endColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7925783793894869346, guid: 8c0e6ef3a7bf1b445b378d8b9f22da70, type: 3}
+      propertyPath: endColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7925783793894869346, guid: 8c0e6ef3a7bf1b445b378d8b9f22da70, type: 3}
+      propertyPath: endColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7925783793894869346, guid: 8c0e6ef3a7bf1b445b378d8b9f22da70, type: 3}
+      propertyPath: moveablePartVelocity
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c0e6ef3a7bf1b445b378d8b9f22da70, type: 3}
