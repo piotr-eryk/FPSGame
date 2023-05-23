@@ -305,6 +305,26 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3832703582600972128, guid: bceefb2a39f6db74d9bc9d006687b7f1, type: 3}
   m_PrefabInstance: {fileID: 2437080218676196637}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1398530108149247412
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504835671030706813}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0e4746e5895e0dc4db43748ec2ac6811, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &4146804067039045735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -321,7 +341,7 @@ MonoBehaviour:
   damageType: 2
   damageableObjectList: {fileID: 11400000, guid: d4ea5fb88271b6641993e18705530cea, type: 2}
   muzzleLocation: {fileID: 1504835671030706809}
-  RecoilPart: {fileID: 0}
+  RecoilPart: {fileID: 1504835671030706813}
   projectilePrefab: {fileID: 7546499504449993487, guid: 624943062b6352847a8ff541435180d0, type: 3}
   projectileSpeed: 100
   shootingDelay: 3
@@ -335,6 +355,10 @@ PrefabInstance:
     - target: {fileID: 191150, guid: 841f0ca7a430c324d92c5583a9df3793, type: 3}
       propertyPath: m_Name
       value: SciFiGunLightYellow
+      objectReference: {fileID: 0}
+    - target: {fileID: 191150, guid: 841f0ca7a430c324d92c5583a9df3793, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 427630, guid: 841f0ca7a430c324d92c5583a9df3793, type: 3}
       propertyPath: m_RootOrder
@@ -499,6 +523,26 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1624697429439270, guid: eedb02d5022eae8419dfe61ce8b8db75, type: 3}
   m_PrefabInstance: {fileID: 8513116392580335110}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &6164466140502429149
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8512207806326666528}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0e4746e5895e0dc4db43748ec2ac6811, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &503469925890825026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -515,7 +559,7 @@ MonoBehaviour:
   damageType: 0
   damageableObjectList: {fileID: 11400000, guid: d4ea5fb88271b6641993e18705530cea, type: 2}
   muzzleLocation: {fileID: 6997052281340975359}
-  RecoilPart: {fileID: 0}
+  RecoilPart: {fileID: 8512207806326666528}
   projectilePrefab: {fileID: 1963756596649554123, guid: eaf6aa0ba5769774e9a7b592af5a8580, type: 3}
   projectileSpeed: 30
   shootingDelay: 3

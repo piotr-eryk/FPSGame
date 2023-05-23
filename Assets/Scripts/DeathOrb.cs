@@ -14,14 +14,31 @@ public class DeathOrb : MonoBehaviour
     private Rigidbody moveablePart;
     [SerializeField]
     private float moveablePartVelocity = 5f;
+    [SerializeField]
+    private GameObject rewardForDestroy;
+    [SerializeField]
+    private float rewardFlyHeigh = 7f;
+    [SerializeField]
+    private float orbRotatingSpeed = 100f;
+    [SerializeField]
+    private GameObject explosionParticle;
 
     private Color startingColor;
+    private GameObject reward;
 
     private void Awake()
     {
         breakableObject.ObjectDamaged += ChangeColor;
         breakableObject.ObjectBreaked += OpenOrb;
         startingColor = materialToChange.materials[1].color;//TODO: magic number
+    }
+
+    void Update()
+    {
+        if (reward)
+        {
+            reward.transform.Rotate(20 * Time.deltaTime, 20 * Time.deltaTime, 20 * Time.deltaTime);
+        }
     }
 
     private void OnDestroy()
@@ -39,15 +56,27 @@ public class DeathOrb : MonoBehaviour
 
     private void OpenOrb()
     {
-        Debug.Log("£OTWIEROJ PANOCKU");
-        moveablePart.useGravity = true;
-        moveablePart.velocity = transform.up * moveablePartVelocity;
-        StartCoroutine(HideUpperOrbPart());
+        var particle = Instantiate(explosionParticle, moveablePart.transform.position, Quaternion.identity);
+        particle.GetComponent<ParticleSystem>().Play();
+        moveablePart.gameObject.SetActive(false);
+        GiveReward();
     }
 
-    IEnumerator HideUpperOrbPart()
+    private void GiveReward()
     {
-        yield return new WaitForSeconds(1f);
-        moveablePart.gameObject.SetActive(false);
+        reward = Instantiate(rewardForDestroy, transform.position, Quaternion.identity);
+        if (reward != null)
+        {
+            StartCoroutine(FlyReward());
+        }
+    }
+
+    private IEnumerator FlyReward()
+    {
+        while (reward.transform.position.y <= rewardFlyHeigh)
+        {
+            reward.transform.position = new Vector3(reward.transform.position.x, reward.transform.position.y, reward.transform.position.z) + Time.deltaTime * Vector3.up;
+            yield return null;
+        }
     }
 }

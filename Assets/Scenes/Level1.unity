@@ -1581,8 +1581,20 @@ PrefabInstance:
       propertyPath: grabbingDistance
       value: 3.5
       objectReference: {fileID: 0}
-    - target: {fileID: 8512207806326666528, guid: 35227827393cd324a86a9b1a1d21dce3, type: 3}
-      propertyPath: m_IsActive
+    - target: {fileID: 8129309819353080197, guid: 35227827393cd324a86a9b1a1d21dce3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8129309819353080197, guid: 35227827393cd324a86a9b1a1d21dce3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8129309819353080197, guid: 35227827393cd324a86a9b1a1d21dce3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8129309819353080197, guid: 35227827393cd324a86a9b1a1d21dce3, type: 3}
+      propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5773179496740696362
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5947288887506463996}
+  m_Layer: 0
+  m_Name: PileSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5947288887506463996
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5773179496740696362}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -1.353, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8753672798694766912}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8944796241956709764
 GameObject:
   m_ObjectHideFlags: 0
@@ -10,8 +41,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8753672798694766912}
   - component: {fileID: 7048352055515518428}
-  - component: {fileID: 6751161128922313892}
   - component: {fileID: 7441895559747850141}
+  - component: {fileID: 7119510779644094701}
   m_Layer: 0
   m_Name: Box
   m_TagString: Untagged
@@ -32,6 +63,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8451888359045284977}
+  - {fileID: 5947288887506463996}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -43,27 +75,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8944796241956709764}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &6751161128922313892
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8944796241956709764}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &7441895559747850141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78,6 +94,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageableObject: {fileID: 11400000, guid: c2ce810873eaa9544b9e7db53ee4fd73, type: 2}
   damageableObjectList: {fileID: 11400000, guid: d4ea5fb88271b6641993e18705530cea, type: 2}
+  damageTrail: {fileID: 0}
+--- !u!114 &7119510779644094701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8944796241956709764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acb7e503ef4a1b044b6964c91930e1f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  breakableObject: {fileID: 7441895559747850141}
+  explosionParticle: {fileID: 1552406440542483259, guid: ad9df13a8bf2a16428e1d97739c6c74d, type: 3}
+  dustPile: {fileID: 17694822555422488, guid: c0234e5002b98384bb7f8a9319aa02cf, type: 3}
+  modelToDestroy: {fileID: 9079524039241178827}
+  pileSpawnPoint: {fileID: 5947288887506463996}
 --- !u!1001 &8269060625156154266
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -138,5 +172,10 @@ PrefabInstance:
 --- !u!4 &8451888359045284977 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4e5491bf0aacdbd46ba467cef2f2ab33, type: 3}
+  m_PrefabInstance: {fileID: 8269060625156154266}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &9079524039241178827 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4e5491bf0aacdbd46ba467cef2f2ab33, type: 3}
   m_PrefabInstance: {fileID: 8269060625156154266}
   m_PrefabAsset: {fileID: 0}

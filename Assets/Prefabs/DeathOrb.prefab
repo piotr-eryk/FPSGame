@@ -66,7 +66,11 @@ MonoBehaviour:
   breakableObject: {fileID: 5508254270517129525}
   endColor: {r: 1, g: 0, b: 0, a: 1}
   moveablePart: {fileID: 5691099183882707167}
-  moveablePartVelocity: 2
+  moveablePartVelocity: 15
+  rewardForDestroy: {fileID: 1963756596649554123, guid: 8c0c881976aab584cb04636d9622e17e, type: 3}
+  rewardFlyHeigh: 3
+  orbRotatingSpeed: 100
+  explosionParticle: {fileID: 1552406440542483259, guid: ad9df13a8bf2a16428e1d97739c6c74d, type: 3}
 --- !u!65 &4401685837818768135
 BoxCollider:
   m_ObjectHideFlags: 0
