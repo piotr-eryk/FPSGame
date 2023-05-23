@@ -29,7 +29,6 @@ public class Laser : Gun
 
         if (laserEnd.collider.gameObject.GetComponent<BreakableObject>() && damageableObjectList.GetVulnerableMaterials(damageType).Contains(laserEnd.collider.gameObject.GetComponent<BreakableObject>().DamageableObject.TypeOfMaterial))
         {// TODO: 
-            Debug.Log("Tu w potworku");
             laserEnd.collider.gameObject.GetComponent<BreakableObject>().OnHit(damageType);
         }
 

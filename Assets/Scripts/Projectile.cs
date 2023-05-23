@@ -14,7 +14,7 @@ public class Projectile : MonoBehaviour
 
     private void OnDestroy()
     {
-        Debug.Log("XD");
+        Debug.Log("object destroyed");
     }
 
     private void OnCollisionEnter(Collision collision)

@@ -14,6 +14,8 @@ public abstract class Gun : MonoBehaviour
     protected DamageableObjectList damageableObjectList;
     [SerializeField]
     protected GameObject muzzleLocation;
+    [SerializeField]
+    public GameObject RecoilPart;
 
     protected RaycastHit hitTarget;
 
@@ -26,9 +28,17 @@ public abstract class Gun : MonoBehaviour
     {
         if (gameObject.activeSelf && Physics.Raycast(cam.position, cam.forward, out hitTarget, range))
         {
+            StartCoroutine(StartRecoil());
             CreateProjectile(hitTarget);
         }
     }
 
     protected abstract void CreateProjectile(RaycastHit targetPoint);
+
+    private IEnumerator StartRecoil()
+    {
+        RecoilPart.GetComponent<Animator>().Play("RecoilLaser");//TODO:
+        yield return new WaitForSeconds(0.20f);
+        RecoilPart.GetComponent<Animator>().Play("New State");
+    }
 }

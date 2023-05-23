@@ -321,6 +321,7 @@ MonoBehaviour:
   damageType: 2
   damageableObjectList: {fileID: 11400000, guid: d4ea5fb88271b6641993e18705530cea, type: 2}
   muzzleLocation: {fileID: 1504835671030706809}
+  RecoilPart: {fileID: 0}
   projectilePrefab: {fileID: 7546499504449993487, guid: 624943062b6352847a8ff541435180d0, type: 3}
   projectileSpeed: 100
   shootingDelay: 3
@@ -379,6 +380,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5982417191350989880, guid: 841f0ca7a430c324d92c5583a9df3793, type: 3}
+      propertyPath: RecoilPart
+      value: 
+      objectReference: {fileID: 8129309819353353541}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 841f0ca7a430c324d92c5583a9df3793, type: 3}
 --- !u!114 &2581913375022666707 stripped
@@ -402,6 +407,26 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 191150, guid: 841f0ca7a430c324d92c5583a9df3793, type: 3}
   m_PrefabInstance: {fileID: 8129309819353180139}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &5078208459782504251
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8129309819353353541}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0e4746e5895e0dc4db43748ec2ac6811, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &8513116392580335110
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -490,6 +515,7 @@ MonoBehaviour:
   damageType: 0
   damageableObjectList: {fileID: 11400000, guid: d4ea5fb88271b6641993e18705530cea, type: 2}
   muzzleLocation: {fileID: 6997052281340975359}
+  RecoilPart: {fileID: 0}
   projectilePrefab: {fileID: 1963756596649554123, guid: eaf6aa0ba5769774e9a7b592af5a8580, type: 3}
   projectileSpeed: 30
   shootingDelay: 3
