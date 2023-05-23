@@ -21,7 +21,8 @@ public class Mirror : MonoBehaviour
 
     public void Shatter()
     {
+        Debug.Log("Zbij");
+        Instantiate(shatteredMirror, transform.position, Quaternion.identity);//TODO: pooling
         gameObject.SetActive(false);
-        Instantiate(shatteredMirror);//TODO: pooling
     }
 }

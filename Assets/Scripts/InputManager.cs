@@ -31,26 +31,17 @@ public class InputManager : MonoBehaviour
         movementAction.ChooseFirstWeapon.performed += _ => changeWeapon.SwitchWeapon(0);//TODO: magic numbers
         movementAction.ChooseSecondWeapon.performed += _ => changeWeapon.SwitchWeapon(1);
         movementAction.ChooseThirdWeapon.performed += _ => changeWeapon.SwitchWeapon(2);
+
+        foreach (var gun in gunList)
+        {
+            movementAction.Shoot.performed += _ => gun.Shoot();
+        }
     }
 
     private void Update()
     {
         playerMotor.ReceiveInput(horizontalInput);
         playerLook.ReceiveInput(mouseInput);
-
-        if (movementAction.Shoot.IsPressed())
-        {
-            foreach (var gun in gunList)
-            {
-                if (gun.isActiveAndEnabled)
-                {
-                    gun.Shoot();
-                    break;
-                }
-
-            }
-
-        }
     }
 
     private void OnEnable()

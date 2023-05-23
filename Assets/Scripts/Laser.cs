@@ -13,33 +13,37 @@ public class Laser : Gun
     [SerializeField]
     private float fadeDelay = 0.05f;
 
-    private Vector3 laserEndPosition;
+    private RaycastHit laserEndPosition;
     private LineRenderer line;
 
-    protected override void CreateProjectile(Vector3 laserEnd)
+    protected override void CreateProjectile(RaycastHit laserEnd)
     {
         if (line == null)
         {
-            line = Instantiate(laser).GetComponent<LineRenderer>();//TODO: change to pooling
+            line = Instantiate(laser).GetComponent<LineRenderer>();
         }
         else
         {
-            line.SetPositions(new Vector3[2] { muzzleLocation.transform.position, laserEnd });
+            line.SetPositions(new Vector3[2] { muzzleLocation.transform.position, laserEnd.point });
+        }
+
+        if (laserEnd.collider.gameObject.GetComponent<BreakableObject>() && damageableObjectList.GetVulnerableMaterials(damageType).Contains(laserEnd.collider.gameObject.GetComponent<BreakableObject>().DamageableObject.TypeOfMaterial))
+        {// TODO: 
+            Debug.Log("Tu w potworku");
+            laserEnd.collider.gameObject.GetComponent<BreakableObject>().OnHit(damageType);
         }
 
         laserEndPosition = laserEnd;
-        StartCoroutine(TryFadeLaser(line)); //TODO: movement with fading laser is bugged
+        StartCoroutine(FadeLaser(line)); //TODO: movement with fading laser is bugged
     }
 
-    IEnumerator TryFadeLaser(LineRenderer line)
+    IEnumerator FadeLaser(LineRenderer line)
     {
-        yield return new WaitForSeconds(fadeDelay);
-
         float alpha = 1;
         while (alpha > 0)
         {
 
-            line.SetPositions(new Vector3[2] { muzzleLocation.transform.position, laserEndPosition });
+            line.SetPositions(new Vector3[2] { muzzleLocation.transform.position, laserEndPosition.point });
             alpha -= Time.deltaTime / fadeDuration;
             line.startColor = new Color(line.startColor.r, line.startColor.g, line.startColor.b, alpha);
             line.endColor = new Color(line.endColor.r, line.endColor.g, line.endColor.b, alpha);

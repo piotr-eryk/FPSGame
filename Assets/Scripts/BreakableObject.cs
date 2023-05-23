@@ -13,8 +13,12 @@ public class BreakableObject : MonoBehaviour, IBreakable
     private DamageableObject damageableObject;
     [SerializeField]
     private DamageableObjectList damageableObjectList;
+    [SerializeField]
+    private GameObject damageTrail;
 
     private int currentHp;
+
+    public DamageableObject DamageableObject => damageableObject;
 
     private void Awake()
     {
@@ -28,7 +32,7 @@ public class BreakableObject : MonoBehaviour, IBreakable
 
     public void OnHit(DamageType damageType)
     {
-
+        Debug.Log("TRAFIONY");
         var materialList = damageableObjectList.GetVulnerableMaterials(damageType);
         if (materialList.Contains(damageableObject.TypeOfMaterial) && currentHp>0)
         {
@@ -40,6 +44,16 @@ public class BreakableObject : MonoBehaviour, IBreakable
             {
                 OnBreak();
             }
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("Trigerr");
+        if (other.gameObject.GetComponent<Projectile>())//TODO: merge these two
+        {
+            var damageType = other.gameObject.GetComponent<Projectile>().DamageType;
+            OnHit(damageType);
         }
     }
 }

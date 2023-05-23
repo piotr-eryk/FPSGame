@@ -20,27 +20,34 @@ public class ProjectileGun : Gun
     {
         base.Awake();
         pool = new ObjectPool<GameObject>(createFunc: () => Instantiate(projectilePrefab, muzzleLocation.transform.position, Quaternion.identity),
-actionOnGet: (obj) => obj.SetActive(true), actionOnRelease: (obj) => obj.SetActive(false),
-actionOnDestroy: (obj) => Destroy(obj), collectionCheck: false, defaultCapacity: 5, maxSize: 20);
+actionOnGet: (obj) => obj.SetActive(true), actionOnRelease: (obj) => obj.SetActive(false), collectionCheck: false, defaultCapacity: 5, maxSize: 20);
     }
 
-    protected override void CreateProjectile(Vector3 targetPosition)
+    private void Start()
     {
-        if (bulletObject && bulletObject.activeSelf)
-        {
-            Rigidbody rigidbody = bulletObject.GetComponentInChildren<Rigidbody>();
-            rigidbody.angularVelocity = Vector3.zero;
-            rigidbody.velocity = cam.transform.forward * projectileSpeed;
-        }
-        else
-        {
-            bulletObject = pool.Get();
-            bulletObject.GetComponentInChildren<Projectile>().OnHit += BackProjectileToPool;
-        }
+        
     }
 
-    public void BackProjectileToPool()
+    protected override void CreateProjectile(RaycastHit targetPosition)//TODO: fix moving
     {
-        pool.Release(bulletObject);
+        bulletObject = pool.Get();
+        Rigidbody rigidbody = bulletObject.GetComponent<Rigidbody>();
+        bulletObject.transform.rotation= Quaternion.identity;
+        rigidbody.angularVelocity = Vector3.zero;
+        rigidbody.velocity = Vector3.zero;
+        rigidbody.velocity = cam.transform.forward * projectileSpeed;
+        bulletObject.GetComponent<Projectile>().OnHit += BackProjectileToPool;
+
+    }
+
+    public void BackProjectileToPool(Projectile projectile)
+    {
+        projectile.gameObject.transform.position = muzzleLocation.transform.position;
+        pool.Release(projectile.gameObject);
+    }
+
+    private void UnsubscribeEvent(Projectile projectile)
+    {
+        projectile.OnHit -= BackProjectileToPool;
     }
 }

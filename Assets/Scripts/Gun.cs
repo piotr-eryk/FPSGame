@@ -24,11 +24,11 @@ public abstract class Gun : MonoBehaviour
 
     public virtual void Shoot()
     {
-        if (Physics.Raycast(cam.position, cam.forward, out hitTarget, range))
+        if (gameObject.activeSelf && Physics.Raycast(cam.position, cam.forward, out hitTarget, range))
         {
-            CreateProjectile(hitTarget.point);
+            CreateProjectile(hitTarget);
         }
     }
 
-    protected abstract void CreateProjectile(Vector3 targetPoint);
+    protected abstract void CreateProjectile(RaycastHit targetPoint);
 }

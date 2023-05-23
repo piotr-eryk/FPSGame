@@ -49,6 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageableObject: {fileID: 11400000, guid: 5cf82e5d8a7de0b4ba7a171086d95198, type: 2}
   damageableObjectList: {fileID: 11400000, guid: d4ea5fb88271b6641993e18705530cea, type: 2}
+  damageTrail: {fileID: 0}
 --- !u!114 &9080949912675375945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,7 +72,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7492582966464088895}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.16322136, y: 2.103087, z: 1.988666}

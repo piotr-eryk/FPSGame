@@ -19,12 +19,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 68432e0e34a9d6e49acf133a7a490882, type: 2}
   - {fileID: 11400000, guid: c32280bd4022b5b43af432d368bd410b, type: 2}
   materialVulnerabilities:
-  - materialTypes: 0000000002000000
+  - materialTypes: 0000000001000000
     damageType: 0
     damage: 1
-  - materialTypes: 01000000
+  - materialTypes: 02000000
     damageType: 1
     damage: 2
   - materialTypes: 0300000004000000
     damageType: 2
-    damage: 3
+    damage: 1

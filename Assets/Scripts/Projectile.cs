@@ -5,10 +5,21 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    public Action OnHit;
+    public Action<Projectile> OnHit;
 
-    private void OnCollisionEnter(Collision _)
+    [SerializeField]
+    private DamageType damageType;
+
+    public DamageType DamageType => damageType;
+
+    private void OnDestroy()
     {
-        OnHit?.Invoke();
+        Debug.Log("XD");
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log(collision.gameObject.name);
+        OnHit?.Invoke(this);
     }
 }
