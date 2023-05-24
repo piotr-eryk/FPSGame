@@ -29,7 +29,7 @@ public class Box : MonoBehaviour
         breakableObject.ObjectBreaked -= DestroyCube;
     }
 
-    private void ChargeCube()
+    private void ChargeCube(Vector3 _)
     {
         Instantiate(chargeParticle, transform.position, Quaternion.identity).GetComponent<ParticleSystem>();
     }

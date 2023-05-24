@@ -22,9 +22,9 @@ MonoBehaviour:
   - materialTypes: 0000000001000000
     damageType: 0
     damage: 1
-  - materialTypes: 02000000
+  - materialTypes: 0200000004000000
     damageType: 1
     damage: 2
-  - materialTypes: 0300000004000000
+  - materialTypes: 03000000
     damageType: 2
     damage: 1

@@ -9,8 +9,6 @@ public class ProjectileGun : Gun
     private GameObject projectilePrefab;
     [SerializeField]
     private float projectileSpeed = 0.1f;
-    [SerializeField]
-    private float shootingDelay = 3f;
 
     public IObjectPool<GameObject> pool;
 

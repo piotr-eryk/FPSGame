@@ -10,8 +10,6 @@ public class Laser : Gun
     private GameObject laser;
     [SerializeField]
     private float fadeDuration = 0.1f;
-    [SerializeField]
-    private float fadeDelay = 0.05f;
 
     private RaycastHit laserEndPosition;
     private LineRenderer line;
@@ -29,7 +27,7 @@ public class Laser : Gun
 
         if (laserEnd.collider.gameObject.GetComponent<BreakableObject>() && damageableObjectList.GetVulnerableMaterials(damageType).Contains(laserEnd.collider.gameObject.GetComponent<BreakableObject>().DamageableObject.TypeOfMaterial))
         {// TODO: 
-            laserEnd.collider.gameObject.GetComponent<BreakableObject>().OnHit(damageType);
+            laserEnd.collider.gameObject.GetComponent<BreakableObject>().OnHit(damageType, laserEnd.point);
         }
 
         laserEndPosition = laserEnd;

@@ -13,8 +13,6 @@ public class DeathOrb : MonoBehaviour
     [SerializeField]
     private Rigidbody moveablePart;
     [SerializeField]
-    private float moveablePartVelocity = 5f;
-    [SerializeField]
     private GameObject rewardForDestroy;
     [SerializeField]
     private float rewardFlyHeigh = 7f;
@@ -37,7 +35,7 @@ public class DeathOrb : MonoBehaviour
     {
         if (reward)
         {
-            reward.transform.Rotate(20 * Time.deltaTime, 20 * Time.deltaTime, 20 * Time.deltaTime);
+            reward.transform.Rotate(orbRotatingSpeed * Time.deltaTime, orbRotatingSpeed * Time.deltaTime, orbRotatingSpeed * Time.deltaTime);
         }
     }
 
@@ -47,7 +45,7 @@ public class DeathOrb : MonoBehaviour
         breakableObject.ObjectBreaked -= OpenOrb;
     }
 
-    private void ChangeColor()
+    private void ChangeColor(Vector3 _)
     {
         var lerpedColor = Color.Lerp(startingColor, endColor, .5f);
         materialToChange.materials[1].color = lerpedColor;

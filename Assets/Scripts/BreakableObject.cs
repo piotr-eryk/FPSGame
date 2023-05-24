@@ -7,7 +7,7 @@ using UnityEngine;
 public class BreakableObject : MonoBehaviour, IBreakable
 {
     public Action ObjectBreaked;
-    public Action ObjectDamaged;
+    public Action<Vector3> ObjectDamaged;
 
     [SerializeField]
     private DamageableObject damageableObject;
@@ -30,15 +30,14 @@ public class BreakableObject : MonoBehaviour, IBreakable
         ObjectBreaked?.Invoke();
     }
 
-    public void OnHit(DamageType damageType)
+    public void OnHit(DamageType damageType, Vector3 damagePlace)//TODO: parameter name
     {
-        Debug.Log("TRAFIONY");
         var materialList = damageableObjectList.GetVulnerableMaterials(damageType);
         if (materialList.Contains(damageableObject.TypeOfMaterial) && currentHp>0)
         {
             currentHp -= damageableObjectList.GetObjectDamage(damageType);
 
-            ObjectDamaged?.Invoke();
+            ObjectDamaged?.Invoke(damagePlace);
 
             if (currentHp <= 0)
             {
@@ -49,11 +48,10 @@ public class BreakableObject : MonoBehaviour, IBreakable
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Trigerr");
         if (other.gameObject.GetComponent<Projectile>())//TODO: merge these two
         {
             var damageType = other.gameObject.GetComponent<Projectile>().DamageType;
-            OnHit(damageType);
+            OnHit(damageType, other.transform.position);
         }
     }
 }

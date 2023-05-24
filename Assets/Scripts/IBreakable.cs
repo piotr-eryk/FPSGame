@@ -5,5 +5,5 @@ using UnityEngine;
 public interface IBreakable
 {
     void OnBreak();
-    void OnHit(DamageType damageType);
+    void OnHit(DamageType damageType, Vector3 damagePosition);
 }
