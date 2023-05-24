@@ -35,7 +35,7 @@ public class Box : MonoBehaviour
     private void DestroyCube()
     {
         Debug.Log("kjub zniszczony");
-        var explosion = Instantiate(explosionParticle).GetComponent<ParticleSystem>();
+        var explosion = Instantiate(explosionParticle, transform.position, Quaternion.identity).GetComponent<ParticleSystem>();
         Instantiate(dustPile, pileSpawnPoint.position, Quaternion.identity, pileSpawnPoint.transform);
         modelToDestroy.SetActive(false);
         explosion.Play();
