@@ -15,7 +15,7 @@ public abstract class Gun : MonoBehaviour
     [SerializeField]
     protected GameObject muzzleLocation;
     [SerializeField]
-    public GameObject RecoilPart;
+    public GameObject recoilPart;
 
     protected RaycastHit hitTarget;
 
@@ -37,8 +37,8 @@ public abstract class Gun : MonoBehaviour
 
     private IEnumerator StartRecoil()
     {
-        RecoilPart.GetComponent<Animator>().Play("LaserGun");//TODO:
+        recoilPart.GetComponent<Animator>().Play("LaserGun");//TODO:
         yield return new WaitForSeconds(0.20f);
-        RecoilPart.GetComponent<Animator>().Play("New State");
+        recoilPart.GetComponent<Animator>().Play("New State");
     }
 }

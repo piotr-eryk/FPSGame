@@ -23,26 +23,24 @@ public class ProjectileGun : Gun
 actionOnGet: (obj) => obj.SetActive(true), actionOnRelease: (obj) => obj.SetActive(false), collectionCheck: false, defaultCapacity: 5, maxSize: 20);
     }
 
-    private void Start()
-    {
-        
-    }
-
     protected override void CreateProjectile(RaycastHit targetPosition)//TODO: fix moving
     {
         bulletObject = pool.Get();
         Rigidbody rigidbody = bulletObject.GetComponent<Rigidbody>();
-        bulletObject.transform.rotation= Quaternion.identity;
+        bulletObject.transform.position = muzzleLocation.transform.position;
+        bulletObject.transform.rotation = Quaternion.identity;
+        Debug.Log(bulletObject.transform.rotation);
         rigidbody.angularVelocity = Vector3.zero;
         rigidbody.velocity = Vector3.zero;
         rigidbody.velocity = cam.transform.forward * projectileSpeed;
         bulletObject.GetComponent<Projectile>().OnHit += BackProjectileToPool;
-
+        Debug.Log(bulletObject.transform.rotation);
     }
 
     public void BackProjectileToPool(Projectile projectile)
     {
         projectile.gameObject.transform.position = muzzleLocation.transform.position;
+        Debug.Log(bulletObject.transform.rotation);
         pool.Release(projectile.gameObject);
     }
 

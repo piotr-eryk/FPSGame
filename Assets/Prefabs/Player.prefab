@@ -241,15 +241,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3832703582600944448, guid: bceefb2a39f6db74d9bc9d006687b7f1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.564
+      value: 0.66
       objectReference: {fileID: 0}
     - target: {fileID: 3832703582600944448, guid: bceefb2a39f6db74d9bc9d006687b7f1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.657
+      value: -0.59999996
       objectReference: {fileID: 0}
     - target: {fileID: 3832703582600944448, guid: bceefb2a39f6db74d9bc9d006687b7f1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.757
+      value: 0.42
       objectReference: {fileID: 0}
     - target: {fileID: 3832703582600944448, guid: bceefb2a39f6db74d9bc9d006687b7f1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -257,15 +257,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3832703582600944448, guid: bceefb2a39f6db74d9bc9d006687b7f1, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3832703582600944448, guid: bceefb2a39f6db74d9bc9d006687b7f1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3832703582600944448, guid: bceefb2a39f6db74d9bc9d006687b7f1, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3832703582600944448, guid: bceefb2a39f6db74d9bc9d006687b7f1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -429,7 +429,7 @@ MonoBehaviour:
   damageType: 2
   damageableObjectList: {fileID: 11400000, guid: d4ea5fb88271b6641993e18705530cea, type: 2}
   muzzleLocation: {fileID: 1504835671030706809}
-  RecoilPart: {fileID: 1504835671030706813}
+  recoilPart: {fileID: 1504835671030706813}
   projectilePrefab: {fileID: 7546499504449993487, guid: 624943062b6352847a8ff541435180d0, type: 3}
   projectileSpeed: 100
   shootingDelay: 3
@@ -466,15 +466,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 427630, guid: 841f0ca7a430c324d92c5583a9df3793, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.475
+      value: 0.66
       objectReference: {fileID: 0}
     - target: {fileID: 427630, guid: 841f0ca7a430c324d92c5583a9df3793, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.309
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 427630, guid: 841f0ca7a430c324d92c5583a9df3793, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.429
+      value: 0.42
       objectReference: {fileID: 0}
     - target: {fileID: 427630, guid: 841f0ca7a430c324d92c5583a9df3793, type: 3}
       propertyPath: m_LocalRotation.w
@@ -506,6 +506,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5982417191350989880, guid: 841f0ca7a430c324d92c5583a9df3793, type: 3}
       propertyPath: RecoilPart
+      value: 
+      objectReference: {fileID: 8129309819353353541}
+    - target: {fileID: 5982417191350989880, guid: 841f0ca7a430c324d92c5583a9df3793, type: 3}
+      propertyPath: recoilPart
       value: 
       objectReference: {fileID: 8129309819353353541}
     m_RemovedComponents: []
@@ -572,15 +576,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4072197404026632, guid: eedb02d5022eae8419dfe61ce8b8db75, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.546
+      value: 0.66
       objectReference: {fileID: 0}
     - target: {fileID: 4072197404026632, guid: eedb02d5022eae8419dfe61ce8b8db75, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.495
+      value: -0.59999996
       objectReference: {fileID: 0}
     - target: {fileID: 4072197404026632, guid: eedb02d5022eae8419dfe61ce8b8db75, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.697
+      value: 0.42
       objectReference: {fileID: 0}
     - target: {fileID: 4072197404026632, guid: eedb02d5022eae8419dfe61ce8b8db75, type: 3}
       propertyPath: m_LocalRotation.w
@@ -588,15 +592,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4072197404026632, guid: eedb02d5022eae8419dfe61ce8b8db75, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4072197404026632, guid: eedb02d5022eae8419dfe61ce8b8db75, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4072197404026632, guid: eedb02d5022eae8419dfe61ce8b8db75, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4072197404026632, guid: eedb02d5022eae8419dfe61ce8b8db75, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -627,12 +631,16 @@ PrefabInstance:
       value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 7765331229734794126, guid: eedb02d5022eae8419dfe61ce8b8db75, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.083
+      objectReference: {fileID: 0}
+    - target: {fileID: 7765331229734794126, guid: eedb02d5022eae8419dfe61ce8b8db75, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.071
+      value: 0.453
       objectReference: {fileID: 0}
     - target: {fileID: 7765331229734794126, guid: eedb02d5022eae8419dfe61ce8b8db75, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.379
+      value: 1.099
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7045605820045453769, guid: eedb02d5022eae8419dfe61ce8b8db75, type: 3}
@@ -683,7 +691,7 @@ MonoBehaviour:
   damageType: 0
   damageableObjectList: {fileID: 11400000, guid: d4ea5fb88271b6641993e18705530cea, type: 2}
   muzzleLocation: {fileID: 6997052281340975359}
-  RecoilPart: {fileID: 8512207806326666528}
+  recoilPart: {fileID: 8512207806326666528}
   projectilePrefab: {fileID: 1963756596649554123, guid: eaf6aa0ba5769774e9a7b592af5a8580, type: 3}
   projectileSpeed: 30
   shootingDelay: 3

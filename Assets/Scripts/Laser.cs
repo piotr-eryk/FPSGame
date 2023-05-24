@@ -36,12 +36,13 @@ public class Laser : Gun
         StartCoroutine(FadeLaser(line)); //TODO: movement with fading laser is bugged
     }
 
+
+
     IEnumerator FadeLaser(LineRenderer line)
     {
         float alpha = 1;
         while (alpha > 0)
         {
-
             line.SetPositions(new Vector3[2] { muzzleLocation.transform.position, laserEndPosition.point });
             alpha -= Time.deltaTime / fadeDuration;
             line.startColor = new Color(line.startColor.r, line.startColor.g, line.startColor.b, alpha);
