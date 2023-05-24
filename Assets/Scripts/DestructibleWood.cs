@@ -8,6 +8,10 @@ public class DestructibleWood : MonoBehaviour
     private BreakableObject breakableObject;
     [SerializeField]
     private GameObject fireParticle;
+    [SerializeField]
+    private GameObject bigFireParticle;
+    [SerializeField]
+    private GameObject bigFireSpawnPoint;
 
     private void Awake()
     {
@@ -28,9 +32,6 @@ public class DestructibleWood : MonoBehaviour
 
     private void WoodOnFire()
     {
-        //var explosion = Instantiate(fireParticle, transform.position, Quaternion.identity).GetComponent<ParticleSystem>();
-        //Instantiate(dustPile, pileSpawnPoint.position, Quaternion.identity, pileSpawnPoint.transform);
-        //modelToDestroy.SetActive(false);
-        //explosion.Play();
+        Instantiate(bigFireParticle, bigFireSpawnPoint.transform.position, Quaternion.identity);
     }
 }
