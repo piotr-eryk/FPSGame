@@ -1505,9 +1505,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 703177551}
     m_Modifications:
+    - target: {fileID: 1504835671030279773, guid: 35227827393cd324a86a9b1a1d21dce3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 1504835671030279773, guid: 35227827393cd324a86a9b1a1d21dce3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.59999996
+      objectReference: {fileID: 0}
+    - target: {fileID: 1504835671030279773, guid: 35227827393cd324a86a9b1a1d21dce3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 1504835671030279773, guid: 35227827393cd324a86a9b1a1d21dce3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1504835671030279773, guid: 35227827393cd324a86a9b1a1d21dce3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1504835671030279773, guid: 35227827393cd324a86a9b1a1d21dce3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1504835671030279773, guid: 35227827393cd324a86a9b1a1d21dce3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1504835671030279773, guid: 35227827393cd324a86a9b1a1d21dce3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1504835671030706813, guid: 35227827393cd324a86a9b1a1d21dce3, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5999623067105204992, guid: 35227827393cd324a86a9b1a1d21dce3, type: 3}
       propertyPath: imagesList.Array.data[0]
@@ -1623,7 +1655,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8512207806326666528, guid: 35227827393cd324a86a9b1a1d21dce3, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8514862023144022286, guid: 35227827393cd324a86a9b1a1d21dce3, type: 3}
       propertyPath: m_LocalPosition.x
