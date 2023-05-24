@@ -112,6 +112,7 @@ MonoBehaviour:
   dustPile: {fileID: 17694822555422488, guid: c0234e5002b98384bb7f8a9319aa02cf, type: 3}
   modelToDestroy: {fileID: 9079524039241178827}
   pileSpawnPoint: {fileID: 5947288887506463996}
+  chargeParticle: {fileID: 1653795602019351733, guid: e00ba1048bed80449b7fd26fbd639dbc, type: 3}
 --- !u!1001 &8269060625156154266
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -14,6 +14,8 @@ public class Box : MonoBehaviour
     private GameObject modelToDestroy;
     [SerializeField]
     private Transform pileSpawnPoint;
+    [SerializeField]
+    private GameObject chargeParticle;
 
     private void Awake()
     {
@@ -29,7 +31,7 @@ public class Box : MonoBehaviour
 
     private void ChargeCube()
     {
-
+        Instantiate(chargeParticle, transform.position, Quaternion.identity).GetComponent<ParticleSystem>();
     }
 
     private void DestroyCube()
