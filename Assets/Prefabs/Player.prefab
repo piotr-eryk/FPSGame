@@ -404,7 +404,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3832703582600972128, guid: bceefb2a39f6db74d9bc9d006687b7f1, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8812985013252817015, guid: bceefb2a39f6db74d9bc9d006687b7f1, type: 3}
@@ -458,6 +458,7 @@ MonoBehaviour:
   recoilPart: {fileID: 1504835671030706813}
   projectilePrefab: {fileID: 7546499504449993487, guid: 624943062b6352847a8ff541435180d0, type: 3}
   projectileSpeed: 100
+  projectileParticle: {fileID: 0}
 --- !u!1001 &8129309819353180139
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -471,7 +472,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 191150, guid: 841f0ca7a430c324d92c5583a9df3793, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 427630, guid: 841f0ca7a430c324d92c5583a9df3793, type: 3}
       propertyPath: m_RootOrder
@@ -657,15 +658,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7765331229734794126, guid: eedb02d5022eae8419dfe61ce8b8db75, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.083
+      value: 0.006
       objectReference: {fileID: 0}
     - target: {fileID: 7765331229734794126, guid: eedb02d5022eae8419dfe61ce8b8db75, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.453
+      value: 0.151
       objectReference: {fileID: 0}
     - target: {fileID: 7765331229734794126, guid: eedb02d5022eae8419dfe61ce8b8db75, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.099
+      value: 0.999
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7045605820045453769, guid: eedb02d5022eae8419dfe61ce8b8db75, type: 3}
@@ -719,6 +720,7 @@ MonoBehaviour:
   recoilPart: {fileID: 8512207806326666528}
   projectilePrefab: {fileID: 1963756596649554123, guid: eaf6aa0ba5769774e9a7b592af5a8580, type: 3}
   projectileSpeed: 30
+  projectileParticle: {fileID: 0}
 --- !u!4 &8514862023144022286 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4072197404026632, guid: eedb02d5022eae8419dfe61ce8b8db75, type: 3}

@@ -38,8 +38,12 @@ actionOnGet: (obj) => obj.SetActive(true), actionOnRelease: (obj) => obj.SetActi
 
     private void CreateParticle()
     {
-        var particle = Instantiate(projectileParticle, transform.position, Quaternion.identity);
-        particle.transform.rotation = transform.rotation;
+        if (projectileParticle != null)
+        {
+            var particle = Instantiate(projectileParticle, muzzleLocation.transform.position, Quaternion.identity);
+            particle.transform.rotation = transform.rotation;
+        }   
+
     }
 
     public void BackProjectileToPool(Projectile projectile)
