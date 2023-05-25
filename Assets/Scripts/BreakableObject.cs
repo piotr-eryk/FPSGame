@@ -6,13 +6,8 @@ using UnityEngine.Events;
 
 public class BreakableObject : MonoBehaviour, IBreakable
 {
-    public UnityEvent OnDestroy;
-
-    public Action OnBreak;
+    public UnityEvent OnBreak;
     public Action<Vector3> OnDamage;
-
-    public GameObject destructionEffect;
-    public DestroyingEffects afterDestroyEffects;
 
     [SerializeField]
     private DamageableObject damageableObject;

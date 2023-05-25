@@ -18,14 +18,14 @@ public class ElectricOrb : MonoBehaviour
     private void Awake()
     {
         breakableObject.OnDamage += DamageOrb;
-        breakableObject.OnBreak += DestroyOrb;
+        breakableObject.OnBreak.AddListener(DestroyOrb);
         particleSettings = orbParticle.main;
     }
 
     private void OnDestroy()
     {
         breakableObject.OnDamage -= DamageOrb;
-        breakableObject.OnBreak -= DestroyOrb;
+        breakableObject.OnBreak.RemoveListener(DestroyOrb);
     }
 
     private void DamageOrb(Vector3 _)

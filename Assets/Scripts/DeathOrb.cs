@@ -27,7 +27,7 @@ public class DeathOrb : MonoBehaviour
     private void Awake()
     {
         breakableObject.OnDamage += ChangeColor;
-        breakableObject.OnBreak += OpenOrb;
+        breakableObject.OnBreak.AddListener(OpenOrb);
         startingColor = materialToChange.materials[1].color;//TODO: magic number
     }
 
@@ -42,7 +42,7 @@ public class DeathOrb : MonoBehaviour
     private void OnDestroy()
     {
         breakableObject.OnDamage -= ChangeColor;
-        breakableObject.OnBreak -= OpenOrb;
+        breakableObject.OnBreak.RemoveListener(OpenOrb);
     }
 
     private void ChangeColor(Vector3 _)

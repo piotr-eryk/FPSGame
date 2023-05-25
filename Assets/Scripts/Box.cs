@@ -20,13 +20,13 @@ public class Box : MonoBehaviour
     private void Awake()
     {
         breakableObject.OnDamage += ChargeCube;
-        breakableObject.OnBreak += DestroyCube;
+        breakableObject.OnBreak.AddListener(DestroyCube);
     }
 
     private void OnDestroy()
     {
         breakableObject.OnDamage -= ChargeCube;
-        breakableObject.OnBreak -= DestroyCube;
+        breakableObject.OnBreak.RemoveListener(DestroyCube);
     }
 
     private void ChargeCube(Vector3 _)

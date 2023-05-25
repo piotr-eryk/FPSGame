@@ -203,6 +203,30 @@ PrefabInstance:
       propertyPath: destroyingEffects
       value: 
       objectReference: {fileID: 703177552}
+    - target: {fileID: 100156076237230882, guid: 1899a75d3550cec469f60c12c4d7e9a8, type: 3}
+      propertyPath: test.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100156076237230882, guid: 1899a75d3550cec469f60c12c4d7e9a8, type: 3}
+      propertyPath: OnDestroy.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100156076237230882, guid: 1899a75d3550cec469f60c12c4d7e9a8, type: 3}
+      propertyPath: test.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100156076237230882, guid: 1899a75d3550cec469f60c12c4d7e9a8, type: 3}
+      propertyPath: OnDestroy.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100156076237230882, guid: 1899a75d3550cec469f60c12c4d7e9a8, type: 3}
+      propertyPath: test.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100156076237230882, guid: 1899a75d3550cec469f60c12c4d7e9a8, type: 3}
+      propertyPath: OnDestroy.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1485734118497931448, guid: 1899a75d3550cec469f60c12c4d7e9a8, type: 3}
       propertyPath: m_Name
       value: PlasmaBall
@@ -513,6 +537,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c03d0b4a118b9e49b7a0f54532bbe83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnDestroy:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!850595691 &876148543
 LightingSettings:
   m_ObjectHideFlags: 0

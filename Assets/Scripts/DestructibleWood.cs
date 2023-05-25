@@ -16,13 +16,13 @@ public class DestructibleWood : MonoBehaviour
     private void Awake()
     {
         breakableObject.OnDamage += IgniteWood;
-        breakableObject.OnBreak += WoodOnFire;
+        breakableObject.OnBreak.AddListener(WoodOnFire);
     }
 
     private void OnDestroy()
     {
         breakableObject.OnDamage -= IgniteWood;
-        breakableObject.OnBreak -= WoodOnFire;
+        breakableObject.OnBreak.RemoveListener(WoodOnFire);
     }
 
     private void IgniteWood(Vector3 damagePlace)//TODO: names
