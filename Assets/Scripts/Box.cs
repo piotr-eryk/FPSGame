@@ -19,14 +19,14 @@ public class Box : MonoBehaviour
 
     private void Awake()
     {
-        breakableObject.ObjectDamaged += ChargeCube;
-        breakableObject.ObjectBreaked += DestroyCube;
+        breakableObject.OnDamage += ChargeCube;
+        breakableObject.OnBreak += DestroyCube;
     }
 
     private void OnDestroy()
     {
-        breakableObject.ObjectDamaged -= ChargeCube;
-        breakableObject.ObjectBreaked -= DestroyCube;
+        breakableObject.OnDamage -= ChargeCube;
+        breakableObject.OnBreak -= DestroyCube;
     }
 
     private void ChargeCube(Vector3 _)

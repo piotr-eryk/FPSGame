@@ -13,14 +13,14 @@ public class Mirror : MonoBehaviour
 
     private void Awake()
     {
-        breakableObject.ObjectBreaked += Shatter;
-        breakableObject.ObjectDamaged += CreateHole;
+        breakableObject.OnBreak += Shatter;
+        breakableObject.OnDamage += CreateHole;
     }
 
     private void OnDestroy()
     {
-        breakableObject.ObjectBreaked -= Shatter;
-        breakableObject.ObjectDamaged -= CreateHole;
+        breakableObject.OnBreak -= Shatter;
+        breakableObject.OnDamage -= CreateHole;
     }
 
     public void Shatter()

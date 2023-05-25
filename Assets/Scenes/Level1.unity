@@ -199,6 +199,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 100156076237230882, guid: 1899a75d3550cec469f60c12c4d7e9a8, type: 3}
+      propertyPath: destroyingEffects
+      value: 
+      objectReference: {fileID: 703177552}
     - target: {fileID: 1485734118497931448, guid: 1899a75d3550cec469f60c12c4d7e9a8, type: 3}
       propertyPath: m_Name
       value: PlasmaBall
@@ -472,6 +476,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 703177551}
+  - component: {fileID: 703177552}
   m_Layer: 0
   m_Name: GameSceneController
   m_TagString: Untagged
@@ -496,6 +501,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &703177552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703177550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c03d0b4a118b9e49b7a0f54532bbe83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!850595691 &876148543
 LightingSettings:
   m_ObjectHideFlags: 0

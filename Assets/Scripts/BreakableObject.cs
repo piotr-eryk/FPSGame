@@ -1,13 +1,18 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class BreakableObject : MonoBehaviour, IBreakable
 {
-    public Action ObjectBreaked;
-    public Action<Vector3> ObjectDamaged;
+    public UnityEvent OnDestroy;
+
+    public Action OnBreak;
+    public Action<Vector3> OnDamage;
+
+    public GameObject destructionEffect;
+    public DestroyingEffects afterDestroyEffects;
 
     [SerializeField]
     private DamageableObject damageableObject;
@@ -23,9 +28,9 @@ public class BreakableObject : MonoBehaviour, IBreakable
         currentHp = damageableObject.MaxHp;
     }
 
-    public void OnBreak()
+    public void ObjectBreaked()
     {
-        ObjectBreaked?.Invoke();
+        OnBreak?.Invoke();
     }
 
     public void OnHit(DamageType damageType, Vector3 damagePlace)//TODO: parameter name
@@ -35,11 +40,11 @@ public class BreakableObject : MonoBehaviour, IBreakable
         {
             currentHp -= damageableObjectList.GetObjectDamage(damageType);
 
-            ObjectDamaged?.Invoke(damagePlace);
+            OnDamage?.Invoke(damagePlace);
 
             if (currentHp <= 0)
             {
-                OnBreak();
+                ObjectBreaked();
             }
         }
     }

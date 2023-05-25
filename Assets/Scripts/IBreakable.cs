@@ -4,6 +4,6 @@ using UnityEngine;
 
 public interface IBreakable
 {
-    void OnBreak();
+    void ObjectBreaked();
     void OnHit(DamageType damageType, Vector3 damagePosition);
 }
