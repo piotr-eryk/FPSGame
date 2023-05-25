@@ -27,18 +27,15 @@ actionOnGet: (obj) => obj.SetActive(true), actionOnRelease: (obj) => obj.SetActi
         Rigidbody rigidbody = bulletObject.GetComponent<Rigidbody>();
         bulletObject.transform.position = muzzleLocation.transform.position;
         bulletObject.transform.rotation = Quaternion.identity;
-        Debug.Log(bulletObject.transform.rotation);
         rigidbody.angularVelocity = Vector3.zero;
         rigidbody.velocity = Vector3.zero;
         rigidbody.velocity = cam.transform.forward * projectileSpeed;
         bulletObject.GetComponent<Projectile>().OnHit += BackProjectileToPool;
-        Debug.Log(bulletObject.transform.rotation);
     }
 
     public void BackProjectileToPool(Projectile projectile)
     {
         projectile.gameObject.transform.position = muzzleLocation.transform.position;
-        Debug.Log(bulletObject.transform.rotation);
         pool.Release(projectile.gameObject);
     }
 

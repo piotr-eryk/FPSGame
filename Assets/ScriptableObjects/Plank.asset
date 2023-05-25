@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 626b8db8e8c65304bae3d54bd946c620, type: 3}
   m_Name: Plank
   m_EditorClassIdentifier: 
-  maxHp: 3
+  maxHp: 5
   materialType: 4
