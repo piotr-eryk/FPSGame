@@ -13,8 +13,6 @@ public class BreakableObject : MonoBehaviour, IBreakable
     private DamageableObject damageableObject;
     [SerializeField]
     private DamageableObjectList damageableObjectList;
-    [SerializeField]
-    private GameObject damageTrail;
 
     private int currentHp;
 

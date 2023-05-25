@@ -1113,6 +1113,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 263190331687607806, guid: 90038a424d1f04d45af82688a7502104, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
     - target: {fileID: 1623160948695450675, guid: 90038a424d1f04d45af82688a7502104, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1157,6 +1161,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1776659360175438891, guid: 90038a424d1f04d45af82688a7502104, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7111798980068684628, guid: 90038a424d1f04d45af82688a7502104, type: 3}
       propertyPath: m_Size.x
       value: 0.23032951
@@ -1169,6 +1177,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mirror
       objectReference: {fileID: 0}
+    - target: {fileID: 7492582966464088895, guid: 90038a424d1f04d45af82688a7502104, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9080949912675375945, guid: 90038a424d1f04d45af82688a7502104, type: 3}
+      propertyPath: bulletHoleImageContainer
+      value: 
+      objectReference: {fileID: 35946299505169933, guid: ee739d4e6b9a39545b2939ffa92a7c36, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90038a424d1f04d45af82688a7502104, type: 3}
 --- !u!4 &1935813755 stripped
@@ -1537,6 +1553,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 703177551}
     m_Modifications:
+    - target: {fileID: 503469925890825026, guid: 35227827393cd324a86a9b1a1d21dce3, type: 3}
+      propertyPath: projectileParticle
+      value: 
+      objectReference: {fileID: 1653795602019351733, guid: f8d6600a77c91a446909ec6668d6deae, type: 3}
+    - target: {fileID: 1504835671030706813, guid: 35227827393cd324a86a9b1a1d21dce3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5999623067105204992, guid: 35227827393cd324a86a9b1a1d21dce3, type: 3}
       propertyPath: imagesList.Array.data[0]
       value: 
@@ -1612,6 +1636,10 @@ PrefabInstance:
     - target: {fileID: 7408852825609521392, guid: 35227827393cd324a86a9b1a1d21dce3, type: 3}
       propertyPath: grabbingDistance
       value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8129309819353353541, guid: 35227827393cd324a86a9b1a1d21dce3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35227827393cd324a86a9b1a1d21dce3, type: 3}

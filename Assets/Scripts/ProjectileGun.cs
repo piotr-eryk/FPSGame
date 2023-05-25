@@ -9,6 +9,8 @@ public class ProjectileGun : Gun
     private GameObject projectilePrefab;
     [SerializeField]
     private float projectileSpeed = 0.1f;
+    [SerializeField]
+    private GameObject projectileParticle;
 
     public IObjectPool<GameObject> pool;
 
@@ -31,6 +33,13 @@ actionOnGet: (obj) => obj.SetActive(true), actionOnRelease: (obj) => obj.SetActi
         rigidbody.velocity = Vector3.zero;
         rigidbody.velocity = cam.transform.forward * projectileSpeed;
         bulletObject.GetComponent<Projectile>().OnHit += BackProjectileToPool;
+        CreateParticle();
+    }
+
+    private void CreateParticle()
+    {
+        var particle = Instantiate(projectileParticle, transform.position, Quaternion.identity);
+        particle.transform.rotation = transform.rotation;
     }
 
     public void BackProjectileToPool(Projectile projectile)

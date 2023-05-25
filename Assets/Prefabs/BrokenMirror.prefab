@@ -43,6 +43,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: mirrorShard
       objectReference: {fileID: 0}
+    - target: {fileID: -9015733469532650589, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
     - target: {fileID: -8926370916295208809, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
       propertyPath: m_Name
       value: mirrorShard
@@ -91,6 +95,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: -8361021344987911015, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
     - target: {fileID: -8167205742378819967, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
       propertyPath: m_Name
       value: mirrorShard
@@ -99,30 +107,66 @@ PrefabInstance:
       propertyPath: m_Name
       value: mirrorShard
       objectReference: {fileID: 0}
+    - target: {fileID: -7854503429611250140, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
     - target: {fileID: -7707218089383192204, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
       propertyPath: m_Name
       value: mirrorShard
       objectReference: {fileID: 0}
+    - target: {fileID: -7640046395681403158, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
+    - target: {fileID: -7453007133743283827, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
+    - target: {fileID: -7300469558174174607, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
     - target: {fileID: -7214738315785424007, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
       propertyPath: m_Name
       value: mirrorShard
       objectReference: {fileID: 0}
+    - target: {fileID: -7138802556171565921, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
     - target: {fileID: -6952768688259441862, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
       propertyPath: m_Name
       value: mirrorShard
       objectReference: {fileID: 0}
+    - target: {fileID: -6817806635646913432, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
     - target: {fileID: -6637419618931604008, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
       propertyPath: m_Name
       value: mirrorShard
       objectReference: {fileID: 0}
+    - target: {fileID: -6551187833837295187, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
     - target: {fileID: -6349841665505879756, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
       propertyPath: m_Name
       value: mirrorShard
       objectReference: {fileID: 0}
+    - target: {fileID: -6276867137181464047, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
     - target: {fileID: -6212297381793942781, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
       propertyPath: m_Name
       value: mirrorShard
       objectReference: {fileID: 0}
+    - target: {fileID: -6198201486708984036, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
     - target: {fileID: -6175587075763531176, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
       propertyPath: m_Name
       value: mirrorShard
@@ -131,14 +175,38 @@ PrefabInstance:
       propertyPath: m_Name
       value: mirrorShard
       objectReference: {fileID: 0}
+    - target: {fileID: -5697917728519600714, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
     - target: {fileID: -5682900212072335535, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
       propertyPath: m_Name
       value: mirrorShard
       objectReference: {fileID: 0}
+    - target: {fileID: -5550600182510105576, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
+    - target: {fileID: -5510212078387299699, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
+    - target: {fileID: -5418541743129126758, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
+    - target: {fileID: -5394637245995170039, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
     - target: {fileID: -5306077867123406013, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
       propertyPath: m_Name
       value: mirrorShard
       objectReference: {fileID: 0}
+    - target: {fileID: -5207022474381939748, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
     - target: {fileID: -4977623041738194055, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
       propertyPath: m_Name
       value: mirrorShard
@@ -151,6 +219,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: mirrorShard
       objectReference: {fileID: 0}
+    - target: {fileID: -4661414626633953403, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
+    - target: {fileID: -4551321612233499522, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
+    - target: {fileID: -4543886851324427851, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
     - target: {fileID: -4530349704486035142, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
       propertyPath: m_Name
       value: mirrorShard
@@ -159,6 +239,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: mirrorShard
       objectReference: {fileID: 0}
+    - target: {fileID: -4259987331417145824, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
+    - target: {fileID: -4104294338725915282, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
+    - target: {fileID: -4034962599137346829, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
+    - target: {fileID: -4026648553516761027, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
     - target: {fileID: -3806297789226614517, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
       propertyPath: m_Name
       value: mirrorShard
@@ -167,10 +263,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: mirrorShard
       objectReference: {fileID: 0}
+    - target: {fileID: -3583297660542305004, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
+    - target: {fileID: -3486980377627638734, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
     - target: {fileID: -3438955766501284811, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
       propertyPath: m_Name
       value: mirrorShard
       objectReference: {fileID: 0}
+    - target: {fileID: -3244619553978471200, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
+    - target: {fileID: -3206988363617135339, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
+    - target: {fileID: -3148358223834196570, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
+    - target: {fileID: -3044653620227438545, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
     - target: {fileID: -2962082875546693646, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
       propertyPath: m_Name
       value: mirrorShard
@@ -187,6 +307,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: mirrorShard
       objectReference: {fileID: 0}
+    - target: {fileID: -2350903691385627945, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
+    - target: {fileID: -2318726661449888695, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
+    - target: {fileID: -2112894347271683150, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
+    - target: {fileID: -2010869780807003199, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
+    - target: {fileID: -1896776739172377067, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
     - target: {fileID: -1884186329981457621, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
       propertyPath: m_Name
       value: mirrorShard
@@ -203,10 +343,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: mirrorShard
       objectReference: {fileID: 0}
+    - target: {fileID: -1383155998657497447, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
     - target: {fileID: -1287985991954662824, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
       propertyPath: m_Name
       value: mirrorShard
       objectReference: {fileID: 0}
+    - target: {fileID: -1263158356568802518, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
+    - target: {fileID: -1209471616842668273, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
+    - target: {fileID: -822461690953079751, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
+    - target: {fileID: -761547732811629085, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
     - target: {fileID: -650194874319855101, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
       propertyPath: m_Name
       value: mirrorShard
@@ -219,10 +379,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: mirrorShard
       objectReference: {fileID: 0}
+    - target: {fileID: -226658839432425130, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
+    - target: {fileID: -165357826469620944, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
     - target: {fileID: 427428779036054908, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
       propertyPath: m_Name
       value: mirrorShard
       objectReference: {fileID: 0}
+    - target: {fileID: 453383087058993163, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
+    - target: {fileID: 476509185816413657, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
     - target: {fileID: 532469641527433907, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
       propertyPath: m_Name
       value: mirrorShard
@@ -235,6 +411,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: mirrorShard
       objectReference: {fileID: 0}
+    - target: {fileID: 905645045673488388, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
     - target: {fileID: 919132149155446097, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
       propertyPath: m_Name
       value: brokenMirror
@@ -243,6 +423,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: mirrorShard
       objectReference: {fileID: 0}
+    - target: {fileID: 1751827959131716047, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
+    - target: {fileID: 1991441886941121654, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
     - target: {fileID: 2006276929806657263, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
       propertyPath: m_Name
       value: mirrorShard
@@ -255,10 +443,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: mirrorShard
       objectReference: {fileID: 0}
+    - target: {fileID: 2265864338713740920, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
+    - target: {fileID: 2284569470130295873, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
     - target: {fileID: 2625481385516828268, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
       propertyPath: m_Name
       value: mirrorShard
       objectReference: {fileID: 0}
+    - target: {fileID: 3194114012843352929, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
     - target: {fileID: 3640558193573492848, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
       propertyPath: m_Name
       value: mirrorShard
@@ -267,10 +467,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: mirrorShard
       objectReference: {fileID: 0}
+    - target: {fileID: 3845945856186023626, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
+    - target: {fileID: 3875291624094406844, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
+    - target: {fileID: 3939876473655533873, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
     - target: {fileID: 3945784204111145020, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
       propertyPath: m_Name
       value: mirrorShard
       objectReference: {fileID: 0}
+    - target: {fileID: 4244768617126422535, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
     - target: {fileID: 4246396014027303019, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
       propertyPath: m_Name
       value: mirrorShard
@@ -279,10 +495,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: mirrorShard
       objectReference: {fileID: 0}
+    - target: {fileID: 4482915403614224374, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
+    - target: {fileID: 4568629143379015527, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
+    - target: {fileID: 4727108527112821314, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
     - target: {fileID: 4739428407580247454, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
       propertyPath: m_Name
       value: mirrorShard
       objectReference: {fileID: 0}
+    - target: {fileID: 4783834776049947315, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
     - target: {fileID: 4797179554963185122, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
       propertyPath: m_Name
       value: mirrorShard
@@ -295,6 +527,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: mirrorShard
       objectReference: {fileID: 0}
+    - target: {fileID: 5582488470915772388, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
     - target: {fileID: 5731641588493537927, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
       propertyPath: m_Name
       value: mirrorShard
@@ -315,10 +551,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: mirrorShard
       objectReference: {fileID: 0}
+    - target: {fileID: 6658676292631105229, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
+    - target: {fileID: 6735588138856421010, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
     - target: {fileID: 6832254652863516649, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
       propertyPath: m_Name
       value: mirrorShard
       objectReference: {fileID: 0}
+    - target: {fileID: 6978020157364639338, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
+    - target: {fileID: 7085225640472221781, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
+    - target: {fileID: 7129719530810610703, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
     - target: {fileID: 7143249590012032982, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
       propertyPath: m_Name
       value: mirrorShard
@@ -331,6 +587,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: mirrorShard
       objectReference: {fileID: 0}
+    - target: {fileID: 7572273464702142992, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
     - target: {fileID: 7631598083750953044, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
       propertyPath: m_Name
       value: mirrorShard
@@ -343,6 +603,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: mirrorShard
       objectReference: {fileID: 0}
+    - target: {fileID: 8369643804628136414, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
     - target: {fileID: 8423285350772215370, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
       propertyPath: m_Name
       value: mirrorShard
@@ -355,10 +619,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: mirrorShard
       objectReference: {fileID: 0}
+    - target: {fileID: 8859022692144192986, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
     - target: {fileID: 8970473580470325374, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
       propertyPath: m_Name
       value: mirrorShard
       objectReference: {fileID: 0}
+    - target: {fileID: 9098765705105313642, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5eee87f18558ef745aea8d0830c1ed57, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0f1bacbf6b27904780c788c54c32faa, type: 3}
 --- !u!1 &50546334229926504 stripped
