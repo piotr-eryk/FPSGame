@@ -9,28 +9,21 @@ public class Mirror : MonoBehaviour
     [SerializeField]
     private GameObject shatteredMirror;
     [SerializeField]
-    private GameObject bulletHoleImageContainer;
+    private GameObject unbrokenMirror;
 
     private void Awake()
     {
-        breakableObject.OnBreak.AddListener(Shatter);
-        breakableObject.OnDamage += CreateHole;
+        breakableObject.OnBreak.AddListener(BrokeMirror);
     }
 
     private void OnDestroy()
     {
-        breakableObject.OnBreak.RemoveListener(Shatter);
-        breakableObject.OnDamage -= CreateHole;
+        breakableObject.OnBreak.RemoveListener(BrokeMirror);
     }
 
-    public void Shatter()
+    public void BrokeMirror()
     {
-        Instantiate(shatteredMirror, transform.position, Quaternion.identity);//TODO: pooling
-        gameObject.SetActive(false);
-    }
-
-    public void CreateHole(Vector3 holePoint)
-    {
-        //Instantiate(bulletHoleImageContainer, holePoint, Quaternion.identity);
+        unbrokenMirror.SetActive(false);
+        shatteredMirror.SetActive(true);
     }
 }

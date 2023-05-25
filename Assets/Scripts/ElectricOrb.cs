@@ -30,14 +30,12 @@ public class ElectricOrb : MonoBehaviour
 
     private void DamageOrb(Vector3 _)
     {
-        Debug.Log("kurwa");
         particleSettings = orbParticle.main;
         particleSettings.startLifetimeMultiplier *= 5f;
     }
 
     private void DestroyOrb()
     {
-        Debug.Log("kurwa2");
         rigidBody.useGravity = true;
         Instantiate(bigExplosionParticle, rigidBody.transform.position, Quaternion.identity);
         orbParticle.Stop();

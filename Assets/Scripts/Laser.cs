@@ -25,9 +25,10 @@ public class Laser : Gun
             line.SetPositions(new Vector3[2] { muzzleLocation.transform.position, laserEnd.point });
         }
 
-        if (laserEnd.collider.gameObject.GetComponent<BreakableObject>() && damageableObjectList.GetVulnerableMaterials(damageType).Contains(laserEnd.collider.gameObject.GetComponent<BreakableObject>().DamageableObject.TypeOfMaterial))
-        {// TODO: 
-            laserEnd.collider.gameObject.GetComponent<BreakableObject>().OnHit(damageType, laserEnd.point);
+        if (laserEnd.collider.gameObject.TryGetComponent<BreakableObject>(out var breakable) && 
+            damageableObjectList.GetVulnerableMaterialsDamage(damageType).Item1.Contains(breakable.DamageableObject.TypeOfMaterial))
+        {
+            breakable.OnHit(damageType, laserEnd.point);
         }
 
         laserEndPosition = laserEnd;

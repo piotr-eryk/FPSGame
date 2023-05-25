@@ -19,28 +19,15 @@ public class DamageableObjectList : ScriptableObject
     [SerializeField]
     private List<MaterialVulnerability> materialVulnerabilities;
 
-    public List<MaterialType> GetVulnerableMaterials(DamageType damageType)
+    public (List<MaterialType>, int) GetVulnerableMaterialsDamage(DamageType damageType)
     {
         foreach (var vulnerability in materialVulnerabilities)
         {
             if (vulnerability.damageType == damageType)
             {
-                return vulnerability.materialTypes;
+                return (vulnerability.materialTypes, vulnerability.damage);
             }
         }
-        return null;
+        return (null, 0);
     }
-
-    public int GetObjectDamage(DamageType damageType)//TODO: merge these two methods
-    {
-        foreach (var vulnerability in materialVulnerabilities)
-        {
-            if (vulnerability.damageType == damageType)
-            {
-                return vulnerability.damage;
-            }
-        }
-        return 0;
-    }
-
 }

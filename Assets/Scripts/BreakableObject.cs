@@ -28,14 +28,14 @@ public class BreakableObject : MonoBehaviour, IBreakable
         OnBreak?.Invoke();
     }
 
-    public void OnHit(DamageType damageType, Vector3 damagePlace)//TODO: parameter name
+    public void OnHit(DamageType damageType, Vector3 hitPoint)
     {
-        var materialList = damageableObjectList.GetVulnerableMaterials(damageType);
-        if (materialList.Contains(damageableObject.TypeOfMaterial) && currentHp>0)
+        var materialList = damageableObjectList.GetVulnerableMaterialsDamage(damageType);
+        if (materialList.Item1.Contains(damageableObject.TypeOfMaterial) && currentHp>0)
         {
-            currentHp -= damageableObjectList.GetObjectDamage(damageType);
+            currentHp -= damageableObjectList.GetVulnerableMaterialsDamage(damageType).Item2;
 
-            OnDamage?.Invoke(damagePlace);
+            OnDamage?.Invoke(hitPoint);
 
             if (currentHp <= 0)
             {
@@ -46,10 +46,9 @@ public class BreakableObject : MonoBehaviour, IBreakable
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.GetComponent<Projectile>())//TODO: merge these two
+        if (other.gameObject.TryGetComponent<Projectile>(out var projectile))
         {
-            var damageType = other.gameObject.GetComponent<Projectile>().DamageType;
-            OnHit(damageType, other.transform.position);
+            OnHit(projectile.DamageType, other.transform.position);
         }
     }
 }
