@@ -457,7 +457,7 @@ MonoBehaviour:
   muzzleLocation: {fileID: 5087593159545515453}
   recoilPart: {fileID: 1504835671030706813}
   projectilePrefab: {fileID: 7546499504449993487, guid: 624943062b6352847a8ff541435180d0, type: 3}
-  projectileSpeed: 200
+  projectileSpeed: 100
 --- !u!1001 &8129309819353180139
 PrefabInstance:
   m_ObjectHideFlags: 0
