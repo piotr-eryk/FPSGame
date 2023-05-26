@@ -10,45 +10,58 @@ public class ProjectileGun : Gun
     [SerializeField]
     private float projectileSpeed = 0.1f;
     [SerializeField]
-    private GameObject projectileParticle;
+    private GameObject projectileParticleContainer;
 
-    public IObjectPool<GameObject> pool;
+    public IObjectPool<GameObject> projectilePool;
+    public IObjectPool<GameObject> particlePool;
 
     private GameObject bulletObject;
 
     public override void Awake()
     {
         base.Awake();
-        pool = new ObjectPool<GameObject>(createFunc: () => Instantiate(projectilePrefab, muzzleLocation.transform.position, Quaternion.identity),
+        projectilePool = new ObjectPool<GameObject>(createFunc: () => Instantiate(projectilePrefab, muzzleLocation.transform.position, Quaternion.identity),
 actionOnGet: (obj) => obj.SetActive(true), actionOnRelease: (obj) => obj.SetActive(false), collectionCheck: false, defaultCapacity: 5, maxSize: 20);
+        if (projectileParticleContainer!= null )
+        {
+            particlePool = new ObjectPool<GameObject>(createFunc: () => Instantiate(projectileParticleContainer, muzzleLocation.transform.position, Quaternion.identity),
+actionOnGet: (obj) => obj.SetActive(true), actionOnRelease: (obj) => obj.SetActive(false), collectionCheck: false, defaultCapacity: 5, maxSize: 20);
+        }
     }
 
     protected override void CreateProjectile(RaycastHit targetPosition)//TODO: fix moving
     {
-        bulletObject = pool.Get();
+        bulletObject = projectilePool.Get();
         Rigidbody rigidbody = bulletObject.GetComponent<Rigidbody>();
         bulletObject.transform.position = muzzleLocation.transform.position;
         bulletObject.transform.rotation = Quaternion.identity;
         rigidbody.angularVelocity = Vector3.zero;
         rigidbody.velocity = Vector3.zero;
         rigidbody.velocity = cam.transform.forward * projectileSpeed;
-        bulletObject.GetComponent<Projectile>().OnHit += BackProjectileToPool;
+        bulletObject.GetComponent<Projectile>().OnHit += BackToPool;
         CreateParticle();
     }
 
     private void CreateParticle()
     {
-        if (projectileParticle != null)
+        if (projectileParticleContainer != null)
         {
-            var particle = Instantiate(projectileParticle, muzzleLocation.transform.position, Quaternion.identity);
+            var particle = particlePool.Get();
             particle.transform.rotation = transform.rotation;
+            particle.transform.position = muzzleLocation.transform.position;
+            particle.GetComponent<BackToPoolController>().OnParticleStop += BackToPool;
         }   
-
     }
 
-    public void BackProjectileToPool(Projectile projectile)
+    public void BackToPool(Projectile objectToReturn)
     {
-        projectile.gameObject.transform.position = muzzleLocation.transform.position;
-        pool.Release(projectile.gameObject);
+        objectToReturn.transform.position = muzzleLocation.transform.position;
+        projectilePool.Release(objectToReturn.gameObject);
+    }
+
+    public void BackToPool(GameObject objectToReturn)
+    {
+        objectToReturn.transform.position = muzzleLocation.transform.position;
+        particlePool.Release(objectToReturn);
     }
 }
