@@ -13,15 +13,15 @@ public class Mirror : MonoBehaviour
 
     private void Awake()
     {
-        breakableObject.OnBreak.AddListener(BrokeMirror);
+        breakableObject.OnBreak.AddListener(BreakMirror);
     }
 
     private void OnDestroy()
     {
-        breakableObject.OnBreak.RemoveListener(BrokeMirror);
+        breakableObject.OnBreak.RemoveListener(BreakMirror);
     }
 
-    public void BrokeMirror()
+    public void BreakMirror()
     {
         unbrokenMirror.SetActive(false);
         shatteredMirror.SetActive(true);

@@ -7,37 +7,27 @@ using UnityEngine.SceneManagement;
 public class Laser : Gun
 {
     [SerializeField]
-    private GameObject laser;
-    [SerializeField]
     private float fadeDuration = 0.1f;
+    [SerializeField]
+    private LineRenderer line;
 
     private RaycastHit laserEndPosition;
-    private LineRenderer line;
 
     protected override void CreateProjectile(RaycastHit laserEnd)
     {
-        if (line == null)
-        {
-            line = Instantiate(laser).GetComponent<LineRenderer>();
-        }
-        else
-        {
-            line.SetPositions(new Vector3[2] { muzzleLocation.transform.position, laserEnd.point });
-        }
+        line.SetPositions(new Vector3[2] { muzzleLocation.transform.position, laserEnd.point });
 
-        if (laserEnd.collider.gameObject.TryGetComponent<BreakableObject>(out var breakable) && 
+        if (laserEnd.collider.gameObject.TryGetComponent<BreakableObject>(out var breakable) &&
             damageableObjectList.GetVulnerableMaterialsDamage(damageType).Item1.Contains(breakable.DamageableObject.TypeOfMaterial))
         {
             breakable.OnHit(damageType, laserEnd.point);
         }
 
         laserEndPosition = laserEnd;
-        StartCoroutine(FadeLaser(line)); //TODO: movement with fading laser is bugged
+        StartCoroutine(FadeLaser(line));
     }
 
-
-
-    IEnumerator FadeLaser(LineRenderer line)
+    private IEnumerator FadeLaser(LineRenderer line)
     {
         float alpha = 1;
         while (alpha > 0)

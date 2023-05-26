@@ -293,6 +293,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cylinder
       objectReference: {fileID: 0}
+    - target: {fileID: 503793391769247424, guid: 538528664e97cdb4da046159325e9cb3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 596613820913577357, guid: 538528664e97cdb4da046159325e9cb3, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -490,6 +494,11 @@ GameObject:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3988051629408264704, guid: b3b7b0eafe91dd8448a380d6bc7bf265, type: 3}
   m_PrefabInstance: {fileID: 415309467}
+  m_PrefabAsset: {fileID: 0}
+--- !u!120 &563090307 stripped
+LineRenderer:
+  m_CorrespondingSourceObject: {fileID: 7740679660313652664, guid: 35227827393cd324a86a9b1a1d21dce3, type: 3}
+  m_PrefabInstance: {fileID: 7408852826975288776}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &703177550
 GameObject:
@@ -1605,6 +1614,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2581913375022666707, guid: 35227827393cd324a86a9b1a1d21dce3, type: 3}
+      propertyPath: line
+      value: 
+      objectReference: {fileID: 563090307}
     - target: {fileID: 5999623067105204992, guid: 35227827393cd324a86a9b1a1d21dce3, type: 3}
       propertyPath: imagesList.Array.data[0]
       value: 

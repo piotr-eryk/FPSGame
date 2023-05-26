@@ -9,7 +9,7 @@ public class ElectricOrb : MonoBehaviour
     [SerializeField]
     private ParticleSystem orbParticle;
     [SerializeField]
-    private GameObject bigExplosionParticle;
+    private ParticleSystem bigExplosionParticle;
     [SerializeField]
     private Rigidbody rigidBody;
 
@@ -37,7 +37,7 @@ public class ElectricOrb : MonoBehaviour
     private void DestroyOrb()
     {
         rigidBody.useGravity = true;
-        Instantiate(bigExplosionParticle, rigidBody.transform.position, Quaternion.identity);
+        bigExplosionParticle.Play();
         orbParticle.Stop();
     }
 }

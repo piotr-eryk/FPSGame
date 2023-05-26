@@ -37,7 +37,7 @@ public abstract class Gun : MonoBehaviour
 
     private IEnumerator StartRecoil()
     {
-        recoilPart.GetComponent<Animator>().Play("LaserGun");//TODO:
+        recoilPart.GetComponent<Animator>().Play("LaserGun");
         yield return new WaitForSeconds(0.20f);
         recoilPart.GetComponent<Animator>().Play("New State");
     }

@@ -7,15 +7,13 @@ public class Box : MonoBehaviour
     [SerializeField]
     private BreakableObject breakableObject;
     [SerializeField]
-    private GameObject explosionParticle;
+    private ParticleSystem explosionParticle;
     [SerializeField]
     private GameObject dustPile;
     [SerializeField]
     private GameObject modelToDestroy;
     [SerializeField]
-    private Transform pileSpawnPoint;
-    [SerializeField]
-    private GameObject chargeParticle;
+    private ParticleSystem chargeParticle;
 
     private void Awake()
     {
@@ -31,15 +29,14 @@ public class Box : MonoBehaviour
 
     private void ChargeCube(Vector3 _)
     {
-        Instantiate(chargeParticle, transform.position, Quaternion.identity).GetComponent<ParticleSystem>();
+        chargeParticle.Play();
     }
 
     private void DestroyCube()
     {
-        var explosion = Instantiate(explosionParticle, transform.position, Quaternion.identity).GetComponent<ParticleSystem>();
-        Instantiate(dustPile, pileSpawnPoint.position, Quaternion.identity, pileSpawnPoint.transform);
+        explosionParticle.Play();
         modelToDestroy.SetActive(false);
-        explosion.Play();
+        dustPile.SetActive(true);
     }
 
 }

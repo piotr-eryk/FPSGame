@@ -51,9 +51,4 @@ actionOnGet: (obj) => obj.SetActive(true), actionOnRelease: (obj) => obj.SetActi
         projectile.gameObject.transform.position = muzzleLocation.transform.position;
         pool.Release(projectile.gameObject);
     }
-
-    private void UnsubscribeEvent(Projectile projectile)
-    {
-        projectile.OnHit -= BackProjectileToPool;
-    }
 }

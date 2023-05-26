@@ -11,12 +11,11 @@ public class ChangeWeapon : MonoBehaviour
 
     private int currentWeaponIndex = 0;
 
-
-    public void SwitchWeapon(int weaponIndex)
+    public void SwitchWeapon(int newWeaponIndex)
     {
-        weaponList[currentWeaponIndex].SetActive(false);//TODO: that doesnt look good
+        weaponList[currentWeaponIndex].SetActive(false);
         imagesList[currentWeaponIndex].SetActive(false);
-        currentWeaponIndex = weaponIndex;
+        currentWeaponIndex = newWeaponIndex;
         weaponList[currentWeaponIndex].SetActive(true);
         imagesList[currentWeaponIndex].SetActive(true);
     }

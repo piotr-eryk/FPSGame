@@ -19,7 +19,7 @@ public class DeathOrb : MonoBehaviour
     [SerializeField]
     private float orbRotatingSpeed = 100f;
     [SerializeField]
-    private GameObject explosionParticle;
+    private ParticleSystem explosionParticle;
 
     private Color startingColor;
     private GameObject reward;
@@ -28,7 +28,7 @@ public class DeathOrb : MonoBehaviour
     {
         breakableObject.OnDamage += ChangeColor;
         breakableObject.OnBreak.AddListener(OpenOrb);
-        startingColor = materialToChange.materials[1].color;//TODO: magic number
+        startingColor = materialToChange.materials[1].color;
     }
 
     void Update()
@@ -54,8 +54,7 @@ public class DeathOrb : MonoBehaviour
 
     private void OpenOrb()
     {
-        var particle = Instantiate(explosionParticle, moveablePart.transform.position, Quaternion.identity);
-        particle.GetComponent<ParticleSystem>().Play();
+        explosionParticle.Play();
         moveablePart.gameObject.SetActive(false);
         GiveReward();
     }
